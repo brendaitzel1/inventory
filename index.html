@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Inventario de Productos</h1>
+      </header><br>
+      <form onsubmit="return agregarFila(this)" class="form">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" name="departamento" required>
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" name="producto" required>
+        <label for="departamento">Precio unitario:</label>
+        <input type="text" id="precioun" name="precio" required>
+        <label for="entrada">Entrada:</label>
+        <input type="time" id="entrada" name="entrada" required>
+        <label for="salida">Salida:</label>
+        <input type="time" id="salida" name="salida" required>
+        <button type="submit">Agregar</button>
+    </form>
+    <br><br>
+  <table id="tabla-registros">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Departamento</th>
+            <th>Entrada</th>
+            <th>Salida</th>
+            <th>Producto</th>
+            <th>Precio unitario</th>
+        </tr>
+    </thead>
+    <tbody>
+  <script src="index.js"></script>
+</body>
+</html>
